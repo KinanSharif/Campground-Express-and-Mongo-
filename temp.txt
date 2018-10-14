@@ -1,0 +1,14 @@
+// hardcoded data
+var campgrounds = [
+					{name: "Saito Hajimi", img: "/images/saito.jpg"},
+					{name: "Shinichi Maki", img: "/images/maki.png"},
+					{name: "Nicolas Brown", img: "/images/nicolas_brown.png"},
+					];
+
+Campground.create(newCampground,function(err,newlyCreated){
+		if(err){
+			console.log(err);
+		}else{
+			res.redirect("/campgrounds");
+		}
+	});
